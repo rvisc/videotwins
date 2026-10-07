@@ -1,0 +1,170 @@
+---
+---
+
+// Le due righe vuote qui sopra non sono un refuso: senza quel blocco Jekyll non tratta questo
+// file come una sorgente da compilare, e lo serve com'e'.
+//
+// L'importazione prende il tema e ci scrive sopra: cosi' quello che segue e' **solo** cio' che
+// cambia, e il resto resta quello di GitHub. Il nome del tema arriva da `_config.yml`: senza
+// quella riga questa importazione e' vuota e il foglio di stile non compila.
+@import "{{ site.theme }}";
+
+// I colori non sono scelti qui: sono quelli di VideoTwins, e accanto a ognuno c'e' il file da
+// cui viene. La pagina e' l'unico posto in cui il progetto non puo' leggerli dal codice, quindi la
+// sorgente sta scritta: e' l'unico modo di accorgersi se il prodotto cambia tavolozza e la pagina
+// resta indietro.
+:root {
+  --fondo:      #0E1A2B;  // tools/make-page.py NIGHT_TOP, la notte dell'icona
+  --fondo-alto: #162C45;  // idem NIGHT_BOTTOM
+  --accento:    #2BB3C0;  // lo schermo acquamarina dell'icona (tools/make-icon.py TEAL)
+  --chiaro:     #7FE3D6;  // tools/make-page.py TEAL_LIGHT, i collegamenti sul fondo scuro
+  --corallo:    #FF7A59;  // lo schermo corallo dell'icona (tools/make-icon.py CORAL)
+  --spento:     #8FB0BB;  // il testo secondario sul fondo scuro
+  --testo:      #EEF7F9;
+  --bordo:      #24506A;
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--fondo);
+  background-image: url("../../sfondo.png");
+  background-size: cover;
+  background-position: center bottom;
+  background-attachment: fixed;  // i fotogrammi ai lati restano fermi mentre si scorre
+  background-repeat: no-repeat;
+  color: var(--testo);
+}
+
+// Il riquadro del testo e' scuro e **traslucido**: sotto si continuano a vedere le pellicole e i
+// fotogrammi messi a confronto, che sono la ragione per cui lo sfondo c'e'.
+.markdown-body {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  padding: 2rem 2.25rem;
+  border: 1px solid var(--bordo);
+  border-radius: 14px;  // gli stessi angoli dei riquadri della finestra di VideoTwins
+  background: rgba(14, 26, 43, 0.88);
+  box-shadow: 0 12px 44px rgba(0, 0, 0, 0.55);
+  color: var(--testo);
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  color: var(--testo);
+  border-bottom: 0;
+}
+
+.markdown-body h1 {
+  margin-bottom: 0.6rem;
+}
+
+.markdown-body h2 {
+  margin-bottom: 0.3rem;
+  clear: both;
+}
+
+.markdown-body h3 {
+  color: var(--testo);
+  margin-top: 1.6rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+}
+
+.markdown-body hr {
+  background-color: var(--bordo);
+  clear: both;
+}
+
+.markdown-body .occhiello {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+// La schermata del negozio nella lingua della sezione: la pagina mostra lo stesso programma che
+// mostra la scheda.
+.markdown-body .schermata {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0.4rem 0 1.2rem;
+  border-radius: 10px;
+  border: 1px solid var(--bordo);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+}
+
+// L'icona accanto al titolo, a destra: il logo Vis-K sta a sinistra.
+.markdown-body .icona {
+  float: right;
+  width: 128px;
+  height: auto;
+  margin: -3.2rem 0 0.4rem 1rem;
+  background: transparent;
+}
+
+// L'app sorella: un riquadro con il bordo corallo, il secondo colore dell'icona, perche' e' un
+// invito e non una parte del prodotto.
+.markdown-body .promo {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--corallo);
+  border-radius: 0 8px 8px 0;
+  background: rgba(255, 122, 89, 0.08);
+}
+
+.markdown-body .rimandi {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.markdown-body .rimandi .separatore {
+  color: var(--spento);
+  font-weight: 400;
+}
+
+.markdown-body p,
+.markdown-body li,
+.markdown-body strong,
+.markdown-body td,
+.markdown-body th {
+  color: var(--testo);
+}
+
+.markdown-body a {
+  color: var(--chiaro);
+}
+
+.markdown-body table tr {
+  background-color: transparent;
+  border-top-color: var(--bordo);
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: rgba(22, 44, 69, 0.55);
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border-color: var(--bordo);
+}
+
+// Il logo Vis-K e' una **targa**: su un fondo scuro non si fonde e non deve, ci si appoggia sopra.
+.logo-vis-k {
+  float: left;
+  width: 76px;
+  height: auto;
+  margin: 0.2rem 1.1rem 0.6rem 0;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+}
+
+.markdown-body p:has(> .logo-vis-k),
+.markdown-body p:has(> .icona) {
+  margin: 0;
+}
+
+.markdown-body .lingue {
+  clear: both;
+  font-size: 1.05rem;
+  line-height: 2;
+  color: var(--spento);
+}
