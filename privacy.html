@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VideoTwins — Privacy</title>
+<!--
+  GENERATA da tools/make-page.py: non modificare a mano.
+  La fonte sono i sei setup/documenti/privacy.*.txt, cioe' gli stessi testi che viaggiano nel pacchetto.
+  Pagina autonoma, senza fogli di stile esterni ne' tema Jekyll: il suo indirizzo sta
+  nella scheda del Microsoft Store e deve aprirsi anche se il tema del sito non compila.
+-->
+<style>
+  :root {
+    --paper: #f3f8fa; --plate: #fbfdfe; --ink: #16303d; --ink-soft: #3f5b69;
+    --ink-faint: #5a7583; --rule: #d5e7ec; --first: #1a8a96; --navy: #16303d;
+    --sans: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, "Microsoft YaHei", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0e1a2b; --plate: #162c45; --ink: #eef7f9; --ink-soft: #b7d3dc;
+      --ink-faint: #8fb0bb; --rule: #2a4a66; --first: #7fe3d6; --navy: #dff6f8;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 2rem 1.25rem 4rem; background: var(--paper); color: var(--ink);
+         font-family: var(--sans); font-size: 1rem; line-height: 1.65; }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin: 0; color: var(--navy); letter-spacing: .01em; }
+  nav { margin: 1.25rem 0 0; padding: .9rem 0; border-top: 1px solid var(--rule);
+        border-bottom: 1px solid var(--rule); }
+  nav a { color: var(--first); text-decoration: none; margin-right: 1.1rem; display: inline-block; padding: .15rem 0; }
+  nav a:hover { text-decoration: underline; }
+  section { margin: 3rem 0 0; padding: 1.75rem 1.75rem .5rem; background: var(--plate);
+            border: 1px solid var(--rule); border-radius: .75rem; }
+  h2 { font-size: 1.15rem; margin: 0; color: var(--navy); letter-spacing: .03em; }
+  h3 { font-size: .95rem; margin: 2rem 0 .35rem; letter-spacing: .04em; color: var(--ink-soft); }
+  p { margin: .35rem 0 1.1rem; }
+  p.versione { color: var(--ink-faint); margin: .3rem 0 1.6rem; font-size: .95rem; }
+  strong { font-weight: 600; }
+  ul { margin: .35rem 0 1.1rem; padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  code { font-family: Consolas, "Cascadia Mono", monospace; font-size: .92em; background: var(--paper);
+         border: 1px solid var(--rule); border-radius: .25rem; padding: 0 .25em; }
+  a { color: var(--first); }
+  @media (max-width: 34rem) { section { padding: 1.25rem 1.1rem .25rem; } }
+</style>
+</head>
+<body>
+<main>
+
+<h1>VideoTwins — Privacy</h1>
+
+<nav>
+<a href="#it">Italiano</a>
+<a href="#en">English</a>
+<a href="#es">Español</a>
+<a href="#fr">Français</a>
+<a href="#de">Deutsch</a>
+<a href="#zh">中文</a>
+<a href="./">&larr; VideoTwins</a>
+</nav>
+
+<section id="it" lang="it">
+<h2>INFORMATIVA SULLA PRIVACY</h2>
+<p class="versione">VideoTwins — versione 1.0.0</p>
+<p>VideoTwins non raccoglie e non conserva dati personali per conto del Titolare, e non gliene manda nessuno. Non contiene telemetria, non traccia l'uso, non richiede un account, non mostra pubblicità e non si collega a Internet.</p>
+<h3>CHE COSA ESCE DAL TUO COMPUTER</h3>
+<p>Niente. L'unica cosa che porta fuori dal programma sono i collegamenti del piede della finestra («Altre app Vis-K») e del programma d'installazione, che aprono una pagina web nel tuo browser solo quando fai clic: il programma non ci aggiunge niente che ti riguardi. Chi riceve quella richiesta vede ciò che vede in ogni richiesta web (l'indirizzo IP della tua connessione e l'ora).</p>
+<h3>CHE COSA RESTA SUL TUO COMPUTER</h3>
+<p>Le cartelle che scegli, il numero di fotogrammi da confrontare e la lingua stanno in %LOCALAPPDATA%\VideoTwins\impostazioni.json (nella versione del Microsoft Store, dentro la cartella del pacchetto). Accanto c'è un registro giornaliero, che resta 14 giorni: dice quanti video ha guardato, quanti doppioni ha trovato e quanti file ha spostato, e il nome dei file che non è riuscito ad aprire o a spostare, per poterti dire perché.</p>
+<h3>I TUOI VIDEO</h3>
+<p>VideoTwins legge i video soltanto nelle cartelle che scegli tu, e soltanto quando avvii una ricerca: la durata, la risoluzione, alcuni fotogrammi ridotti in scala di grigi e, fra file della stessa dimensione, l'impronta SHA-256 del contenuto. Tutto questo resta in memoria finché la finestra è aperta e non viene salvato. I fotogrammi li decodifica Windows, sul tuo computer. Sposta un file nel cestino o in un'altra cartella solo dopo la tua conferma, e solo se sta dentro le cartelle scelte.</p>
+<h3>ACQUISTO DAL MICROSOFT STORE</h3>
+<p>Se hai acquistato VideoTwins dal Microsoft Store, i dati dell'acquisto e del pagamento li tratta Microsoft secondo la propria informativa. Il Titolare non li riceve.</p>
+<h3>COMPONENTI DI TERZI</h3>
+<p>Il programma include il runtime Microsoft .NET e Windows Presentation Foundation, i cui testi di licenza viaggiano insieme al programma nella cartella «licenze». Nessuno di questi componenti introduce telemetria in questo prodotto.</p>
+<h3>TITOLARE E CONTATTO</h3>
+<p>Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+<section id="en" lang="en">
+<h2>PRIVACY POLICY</h2>
+<p class="versione">VideoTwins — version 1.0.0</p>
+<p>VideoTwins does not collect or keep personal data on behalf of the Controller, and sends it none. It contains no telemetry, does not track usage, does not require an account, shows no ads and does not connect to the Internet.</p>
+<h3>WHAT LEAVES YOUR COMPUTER</h3>
+<p>Nothing. The only things that lead outside the program are the links in the window's footer ("More Vis-K apps") and in the setup program, which open a web page in your browser only when you click: the program adds nothing about you. Whoever receives that request sees what they see in any web request (the IP address of your connection and the time).</p>
+<h3>WHAT STAYS ON YOUR COMPUTER</h3>
+<p>The folders you choose, the number of frames to compare and the language are stored in %LOCALAPPDATA%\VideoTwins\impostazioni.json (in the Microsoft Store version, inside the package's folder). Next to it there is a daily log, kept for 14 days: it says how many videos were looked at, how many duplicates were found and how many files were moved, and the names of the files that could not be opened or moved, so that it can tell you why.</p>
+<h3>YOUR VIDEOS</h3>
+<p>VideoTwins reads videos only in the folders you choose, and only when you start a search: the length, the resolution, a few frames reduced to greyscale and, between files of the same size, the SHA-256 fingerprint of the content. All of this stays in memory while the window is open and is not saved. The frames are decoded by Windows, on your computer. It moves a file to the Recycle Bin or to another folder only after your confirmation, and only if it is inside the chosen folders.</p>
+<h3>PURCHASE FROM THE MICROSOFT STORE</h3>
+<p>If you bought VideoTwins from the Microsoft Store, the purchase and payment data are processed by Microsoft under its own privacy statement. The Controller does not receive them.</p>
+<h3>THIRD-PARTY COMPONENTS</h3>
+<p>The program includes the Microsoft .NET runtime and Windows Presentation Foundation, whose license texts travel with the program in the "licenze" folder. None of these components introduces telemetry in this product.</p>
+<h3>CONTROLLER AND CONTACT</h3>
+<p>Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+<section id="es" lang="es">
+<h2>POLÍTICA DE PRIVACIDAD</h2>
+<p class="versione">VideoTwins — versión 1.0.0</p>
+<p>VideoTwins no recopila ni conserva datos personales por cuenta del Responsable, y no le envía ninguno. No contiene telemetría, no rastrea el uso, no requiere una cuenta, no muestra publicidad y no se conecta a Internet.</p>
+<h3>QUÉ SALE DE TU ORDENADOR</h3>
+<p>Nada. Lo único que lleva fuera del programa son los enlaces del pie de la ventana («Más apps de Vis-K») y del programa de instalación, que abren una página web en tu navegador solo cuando haces clic: el programa no añade nada sobre ti. Quien recibe esa petición ve lo que ve en cualquier petición web (la dirección IP de tu conexión y la hora).</p>
+<h3>QUÉ SE QUEDA EN TU ORDENADOR</h3>
+<p>Las carpetas que eliges, el número de fotogramas que comparar y el idioma se guardan en %LOCALAPPDATA%\VideoTwins\impostazioni.json (en la versión de Microsoft Store, dentro de la carpeta del paquete). Al lado hay un registro diario, que se conserva 14 días: dice cuántos vídeos ha mirado, cuántos duplicados ha encontrado y cuántos archivos ha movido, y el nombre de los archivos que no ha podido abrir o mover, para poder decirte por qué.</p>
+<h3>TUS VÍDEOS</h3>
+<p>VideoTwins lee los vídeos solo en las carpetas que eliges tú, y solo cuando inicias una búsqueda: la duración, la resolución, algunos fotogramas reducidos a escala de grises y, entre archivos del mismo tamaño, la huella SHA-256 del contenido. Todo esto se queda en memoria mientras la ventana está abierta y no se guarda. Los fotogramas los decodifica Windows, en tu ordenador. Mueve un archivo a la papelera o a otra carpeta solo después de tu confirmación, y solo si está dentro de las carpetas elegidas.</p>
+<h3>COMPRA EN MICROSOFT STORE</h3>
+<p>Si has comprado VideoTwins en Microsoft Store, los datos de la compra y del pago los trata Microsoft según su propia declaración de privacidad. El Responsable no los recibe.</p>
+<h3>COMPONENTES DE TERCEROS</h3>
+<p>El programa incluye el runtime de Microsoft .NET y Windows Presentation Foundation, cuyos textos de licencia viajan junto con el programa en la carpeta «licenze». Ninguno de estos componentes introduce telemetría en este producto.</p>
+<h3>RESPONSABLE Y CONTACTO</h3>
+<p>Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+<section id="fr" lang="fr">
+<h2>POLITIQUE DE CONFIDENTIALITÉ</h2>
+<p class="versione">VideoTwins — version 1.0.0</p>
+<p>VideoTwins ne collecte et ne conserve aucune donnée personnelle pour le compte du Responsable, et ne lui en envoie aucune. Il ne contient pas de télémétrie, ne suit pas l'utilisation, ne demande pas de compte, n'affiche pas de publicité et ne se connecte pas à Internet.</p>
+<h3>CE QUI SORT DE TON ORDINATEUR</h3>
+<p>Rien. Les seules choses qui mènent hors du programme sont les liens du pied de la fenêtre (« Autres applis Vis-K ») et du programme d'installation, qui ouvrent une page web dans ton navigateur seulement quand tu cliques : le programme n'y ajoute rien qui te concerne. Qui reçoit cette requête voit ce qu'il voit dans toute requête web (l'adresse IP de ta connexion et l'heure).</p>
+<h3>CE QUI RESTE SUR TON ORDINATEUR</h3>
+<p>Les dossiers que tu choisis, le nombre d'images à comparer et la langue sont enregistrés dans %LOCALAPPDATA%\VideoTwins\impostazioni.json (dans la version du Microsoft Store, dans le dossier du paquet). À côté se trouve un journal quotidien, conservé 14 jours : il indique combien de vidéos ont été regardées, combien de doublons ont été trouvés et combien de fichiers ont été déplacés, ainsi que le nom des fichiers qui n'ont pas pu être ouverts ou déplacés, pour pouvoir te dire pourquoi.</p>
+<h3>TES VIDÉOS</h3>
+<p>VideoTwins lit les vidéos seulement dans les dossiers que tu choisis, et seulement quand tu lances une recherche : la durée, la résolution, quelques images réduites en niveaux de gris et, entre fichiers de même taille, l'empreinte SHA-256 du contenu. Tout cela reste en mémoire tant que la fenêtre est ouverte et n'est pas enregistré. Les images sont décodées par Windows, sur ton ordinateur. Il déplace un fichier dans la Corbeille ou dans un autre dossier seulement après ta confirmation, et seulement s'il se trouve dans les dossiers choisis.</p>
+<h3>ACHAT SUR LE MICROSOFT STORE</h3>
+<p>Si tu as acheté VideoTwins sur le Microsoft Store, les données d'achat et de paiement sont traitées par Microsoft selon sa propre déclaration de confidentialité. Le Responsable ne les reçoit pas.</p>
+<h3>COMPOSANTS TIERS</h3>
+<p>Le programme inclut le runtime Microsoft .NET et Windows Presentation Foundation, dont les textes de licence accompagnent le programme dans le dossier « licenze ». Aucun de ces composants n'introduit de télémétrie dans ce produit.</p>
+<h3>RESPONSABLE ET CONTACT</h3>
+<p>Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+<section id="de" lang="de">
+<h2>DATENSCHUTZERKLÄRUNG</h2>
+<p class="versione">VideoTwins — Version 1.0.0</p>
+<p>VideoTwins erhebt und speichert keine personenbezogenen Daten im Auftrag des Verantwortlichen und sendet ihm keine. Es enthält keine Telemetrie, verfolgt die Nutzung nicht, verlangt kein Konto, zeigt keine Werbung und verbindet sich nicht mit dem Internet.</p>
+<h3>WAS DEINEN COMPUTER VERLÄSST</h3>
+<p>Nichts. Aus dem Programm hinaus führen nur die Links in der Fußzeile des Fensters („Weitere Vis-K-Apps“) und im Installationsprogramm, die eine Webseite in deinem Browser öffnen, und zwar nur, wenn du klickst: Das Programm fügt nichts über dich hinzu. Wer diese Anfrage erhält, sieht, was er bei jeder Webanfrage sieht (die IP-Adresse deiner Verbindung und die Uhrzeit).</p>
+<h3>WAS AUF DEINEM COMPUTER BLEIBT</h3>
+<p>Die gewählten Ordner, die Zahl der zu vergleichenden Bilder und die Sprache liegen in %LOCALAPPDATA%\VideoTwins\impostazioni.json (in der Version aus dem Microsoft Store im Paketordner). Daneben gibt es ein tägliches Protokoll, das 14 Tage aufbewahrt wird: Es hält fest, wie viele Videos angesehen, wie viele Duplikate gefunden und wie viele Dateien verschoben wurden, und die Namen der Dateien, die nicht geöffnet oder verschoben werden konnten, damit es dir sagen kann, warum.</p>
+<h3>DEINE VIDEOS</h3>
+<p>VideoTwins liest Videos nur in den Ordnern, die du auswählst, und nur, wenn du eine Suche startest: die Länge, die Auflösung, einige auf Graustufen verkleinerte Bilder und, bei gleich großen Dateien, den SHA-256-Fingerabdruck des Inhalts. All das bleibt im Speicher, solange das Fenster offen ist, und wird nicht gespeichert. Die Bilder dekodiert Windows, auf deinem Computer. Eine Datei wird nur nach deiner Bestätigung in den Papierkorb oder einen anderen Ordner verschoben, und nur, wenn sie in den gewählten Ordnern liegt.</p>
+<h3>KAUF IM MICROSOFT STORE</h3>
+<p>Wenn du VideoTwins im Microsoft Store gekauft hast, verarbeitet Microsoft die Kauf- und Zahlungsdaten gemäß seiner eigenen Datenschutzerklärung. Der Verantwortliche erhält sie nicht.</p>
+<h3>KOMPONENTEN DRITTER</h3>
+<p>Das Programm enthält die Microsoft-.NET-Laufzeit und Windows Presentation Foundation, deren Lizenztexte das Programm im Ordner „licenze“ begleiten. Keine dieser Komponenten bringt Telemetrie in dieses Produkt.</p>
+<h3>VERANTWORTLICHER UND KONTAKT</h3>
+<p>Rosario Viscardi (Vis-K) — <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+<section id="zh" lang="zh-Hans">
+<h2>隐私政策</h2>
+<p class="versione">VideoTwins — 版本 1.0.0</p>
+<p>VideoTwins 不代表控制者收集或保存任何个人数据，也不向其发送任何数据。它不含遥测，不跟踪使用情况，不需要账户，不显示广告，也不连接互联网。</p>
+<h3>什么会离开你的电脑</h3>
+<p>什么都不会。唯一通向程序之外的，是窗口底部（“更多 Vis-K 应用”）和安装程序中的链接：只有在你点击时，它们才会在浏览器中打开网页，程序不会附加任何与你有关的信息。接收该请求的一方看到的，与任何网页请求相同（你的网络连接的 IP 地址和时间）。</p>
+<h3>什么留在你的电脑上</h3>
+<p>你选择的文件夹、要比较的画面数和语言保存在 %LOCALAPPDATA%\VideoTwins\impostazioni.json（Microsoft Store 版本中位于应用包的文件夹内）。旁边有一个保留 14 天的每日日志：记录查看了多少视频、找到了多少重复、移动了多少文件，以及无法打开或移动的文件的名称，以便告诉你原因。</p>
+<h3>你的视频</h3>
+<p>VideoTwins 只读取你选择的文件夹中的视频，并且只在你开始搜索时读取：时长、分辨率、几个缩小为灰度的画面，以及在大小相同的文件之间计算内容的 SHA-256 指纹。这些信息只在窗口打开期间保存在内存中，不会被保存。画面由 Windows 在你的电脑上解码。只有在你确认之后，并且只有当文件位于所选文件夹内时，它才会把文件移到回收站或另一个文件夹。</p>
+<h3>从 MICROSOFT STORE 购买</h3>
+<p>如果你从 Microsoft Store 购买了 VideoTwins，购买和付款数据由 Microsoft 按其自己的隐私声明处理。控制者不会收到这些数据。</p>
+<h3>第三方组件</h3>
+<p>本程序包含 Microsoft .NET 运行时和 Windows Presentation Foundation，其许可文本随程序一起放在“licenze”文件夹中。这些组件均未在本产品中引入遥测。</p>
+<h3>控制者与联系方式</h3>
+<p>Rosario Viscardi（Vis-K）— <a href="mailto:vis-k@outlook.it">vis-k@outlook.it</a></p>
+<p>© 2026 Vis-K</p>
+</section>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,19 @@
+# La pagina pubblica di VideoTwins — https://rvisc.github.io/videotwins/
+#
+# Tre righe, come quelle di IApet ed EasyJobCall, e per le stesse ragioni.
+
+# Il tema Primer disegna un'intestazione sua sopra il contenuto, ma **solo quando il titolo del
+# sito è diverso da quello della pagina**. Senza questo file il titolo del sito è il nome del
+# repository — «videotwins», minuscolo — mentre quello della pagina viene dal README, «VideoTwins»:
+# diversi per le maiuscole, quindi le intestazioni diventerebbero due. Scritto uguale, ne resta una.
+title: VideoTwins
+
+# Finisce nel <meta name="description"> e, con il tema Primer, anche nel titolo della scheda del
+# browser dopo una barra verticale: tenuta corta. In inglese, perché è la riga che un motore di
+# ricerca mostra a chiunque.
+description: Finds duplicate videos by comparing their frames
+
+# Il tema che GitHub Pages usa di suo, scritto per **bloccarlo**: il giorno in cui il tema
+# predefinito cambia, questa pagina resta com'è. Il suo indirizzo sta nella scheda del negozio e
+# nel campo dell'informativa privacy.
+theme: jekyll-theme-primer
